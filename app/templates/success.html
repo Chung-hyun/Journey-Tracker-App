@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Subscription{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+</head>
+
+<body>
+    <header>
+        {% include 'navbar.html' %}
+    </header>
+
+    <div class="subscription-success">
+        <p>Thank you for subscribing !</p>
+        <div class="subscription-success">
+            <img class="subscription-success-gif" src="{{ url_for('static', filename='image/sucessPage.gif') }}" alt="Your GIF Description">
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+{% endblock %}

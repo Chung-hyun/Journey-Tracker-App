@@ -1,0 +1,1065 @@
+/* Stylesheet */
+
+/* Base */
+
+body {
+    background-color: #014E86 !important;
+    /* Use !important to override Bootstrap's styles */
+    color: #ffffff !important;
+
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.font-bold-italic {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.navbar {
+    margin-top: 0;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23014E86' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.nav-item {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    border-radius: 5px;
+    color: #014E86;
+}
+
+.nav-item a:hover {
+    background-color: #014E86;
+}
+
+/* Navbar Styles */
+.navbar-custom {
+    background-color: #014E86;
+    margin-top: 0;
+    /* Set navbar background color */
+}
+
+.navbar-custom .navbar-brand-custom {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    /* Customize navbar brand styles */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+
+.navbar-custom .nav-item {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-custom .nav-item a {
+    text-decoration: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.navbar-custom .nav-item a:hover {
+    background-color: #ffffff;
+    color: #014E86;
+    /* Change background color and text color on hover */
+}
+
+
+/* Landing Page */
+
+.welcome-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #ffffff !important;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.login-register {
+    margin-top: 10px;
+}
+
+.login-register a {
+    color: #000000;
+    background-color: #FFA500;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    /* Adjust padding for better size */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    transition: all 0.3s ease;
+    /* Smooth transition */
+    border: 2px solid transparent;
+    /* Add border */
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+    background-color: #FFA500;
+    /* Lighter yellow on hover */
+    border-color: #000000;
+    /* Black border on hover */
+}
+
+/* Register Page */
+
+.btn-custom-color {
+    background-color: #014E86 !important;
+    border-color: #ffffff !important;
+    font-family: monospace !important;
+    color: #ffffff !important;
+    /* Set text color to white */
+
+}
+
+.btn-custom-color:hover {
+    background-color: #0e5587 !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+    font-weight: bold;
+    /* Set text color to white on hover */
+}
+
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Smooth transition for transform and box-shadow */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    /* Makes the card move up slightly */
+    box-shadow: 0px 4px 20px #6BFFF7;
+    /* Creates a 'glow' effect */
+}
+
+.card h1 {
+    color: #000000 !important;
+    font-weight: bolder !important;
+}
+
+
+/* User Dashboard Page */
+
+.background {
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+    min-height: calc(100vh - 0px);
+}
+
+.dashboard-header h1 {
+    color: #ffffff !important;
+    font-family: monospace !important;
+    font-weight: bolder;
+    font-style: italic;
+    position: relative;
+    /* Make it a positioned element */
+    top: 30px;
+    /* Adjust the top position */
+    left: 5vh;
+    width: 25vh;
+}
+
+.highlighted {
+    background-color: #014E86 !important;
+    padding: 0 10px;
+    display: inline-block;
+    /* Makes the div only as wide as its content */
+}
+
+.dashboard {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+.dashboard-section {
+    width: 30%;
+    /* Set a fixed percentage width for each section */
+}
+
+.dashboard-gif {
+    position: absolute;
+    bottom: -5vh;
+    left: -10vh;
+    width: 100%;
+    height: auto;
+    transform: scaleX(-1);
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    .dashboard-gif {
+        max-width: 100%;
+        /* Allows image to fill the container on small screens */
+    }
+}
+
+/* Larger screens */
+@media (min-width: 601px) {
+    .dashboard-gif {
+        max-width: 500px;
+        /* Restrict image size on larger screens */
+    }
+}
+
+
+
+.title-word {
+    display: block;
+    text-align: right;
+}
+
+.section-content {
+    text-align: right;
+    font-size: large;
+    color: #014E86 !important;
+}
+
+h2 {
+    font-family: monospace;
+    font-weight: bold !important;
+    color: #014E86 !important;
+    font-style: italic;
+    margin: 0 !important;
+}
+
+#section1 {
+    margin-top: 0;
+    /* First box at the top */
+}
+
+#section2 {
+    margin-top: 80px;
+    /* Second box slightly lower */
+}
+
+#section3 {
+    margin-top: 180px;
+    /* Third box even lower */
+}
+
+
+
+/* Payment Subscription Page */
+
+.payment-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.payment-page #payment-form {
+    margin-top: 30px;
+    text-align: center;
+    width: 70%;
+    max-width: 400px;
+    /* Maximum width for better readability on larger screens */
+    padding: 20px;
+    /* Add some padding for better spacing */
+}
+
+.payment-page h1 {
+    color: #014E86 !important;
+    font-family: monospace;
+}
+
+.payment-page label {
+    color: #ffffff;
+    text-align: left;
+    /* Align labels to the left */
+    display: block;
+    /* Ensure labels are displayed as blocks for proper alignment */
+}
+
+.payment-page input[type="email"],
+.payment-page input[type="text"],
+.payment-page select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddcdc;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.payment-page select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddcdc;
+    margin-bottom: 10px;
+}
+
+.payment-page button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #014E86;
+    color: #141414;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-page button:hover {
+    background-color: #014E86;
+}
+
+.payment-page #card-element {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddcdc;
+    margin-bottom: 10px;
+}
+
+.payment-page #card-errors {
+    color: #FF0000;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Membership page */
+.membership-plans {
+    margin-top: 0vh;
+    /* Adjust as needed */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Added */
+}
+
+.membership-plans h1 {
+    color: #ffffff !important;
+    background-color: #014E86;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.membership-plans .plan {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow options to wrap to next line */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.membership-plans .plan-option {
+    width: calc(33% - 20px);
+    /* Adjusted width for smaller screens with margins */
+    max-width: 300px;
+    /* Added max-width to prevent options from stretching too much */
+    background-color: #014E86;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px;
+    /* Adjusted */
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+}
+
+.membership-plans .plan-option h2,
+.membership-plans .plan-option p {
+    color: #ffffff !important;
+    /* Changed color to black */
+    font-size: 20px;
+}
+
+.membership-plans .plan-option form {
+    margin-top: 20px;
+}
+
+.membership-plans .plan-option button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #FFA500;
+    color: #141414;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.membership-plans .plan-option button:hover {
+    background-color: #fcb32c;
+    font-weight: bold;
+}
+
+.plan-card-title {
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.py-7 {
+    margin-top: 15vh;
+}
+
+.current-plan,
+.renewal-date,
+.title {
+    color: #014E86;
+    font-size: 24px;
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .membership-plans .plan-option {
+        width: calc(50% - 20px);
+        /* Adjusted width for smaller screens with margins */
+    }
+}
+
+@media (max-width: 576px) {
+    .membership-plans .plan-option {
+        width: calc(100% - 20px);
+        /* Adjusted width for even smaller screens with margins */
+    }
+}
+
+
+/* Subscription Success Page */
+.subscription-success {
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.subscription-success p {
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 32px;
+}
+
+.subscription-success-gif {
+    margin-top: -30vh;
+    width: 500px;
+    /* Adjust width as needed */
+    height: 500px;
+    /* Adjust height as needed */
+
+}
+
+
+/* Change plan */
+
+.confirm-plan-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 400px;
+    /* Adjust the width as needed */
+    color: #ffffff;
+
+}
+
+.confirm-plan-change p {
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.confirm-plan-change form {
+    margin-top: 20px;
+
+}
+
+.confirm-plan-change button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #014E86;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    margin-right: 10px;
+    /* Change margin between buttons */
+}
+
+.confirm-plan-change button:last-child {
+    margin-right: 20px;
+    /* Increase margin between buttons */
+}
+
+.confirm-plan-change button:hover {
+    background-color: #014E86;
+}
+
+/* landing page */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.profile img {
+    width: 130px;
+    height: 160px;
+    /* Adjust the height as needed to maintain your desired aspect ratio */
+}
+
+.py-6 {
+    padding-bottom: 3rem !important;
+}
+
+.profile {
+    margin: 0 auto;
+    /* Center the card in the column */
+    padding: 1rem;
+    /* Add some spacing inside the card */
+}
+
+.img-fluid {
+    max-width: 54vw;
+    width: 183px;
+}
+
+#visionSection,
+#subsPlanSection {
+    background-color: #ffffff;
+}
+
+.vision-box,
+.mission-box {
+    border: 2px dashed #014E86;
+    /* Creates the dashed border effect */
+    color: #014E86;
+    /* Text color */
+    margin: 1rem 0;
+    padding: 2rem;
+}
+
+#subsPlanSection .membership-plans .card,
+#subsPlanSection .membership-plans .card .card-body,
+#subsPlanSection .membership-plans .card .card-body .plan-card-title,
+#subsPlanSection .membership-plans .card .card-body .card-text {
+    background-color: #014E86;
+    /* Dark blue */
+    color: #ffffff !important;
+    /* Ensuring text is white */
+}
+
+.vision-box h2,
+.mission-box h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-heading {
+    color: white;
+}
+
+.border-box {
+    border: 3px solid #014E86;
+    /* Solid border inside */
+    padding: 1rem;
+    text-align: justify;
+}
+
+.btn-yellow {
+    background-color: #FFA500 !important;
+    color: black !important;
+    /* Optionally, change text color to ensure readability */
+    border-color: #FFA500 !important;
+    /* Ensure border color matches background color */
+}
+
+.btn-yellow:hover {
+    color: black !important;
+    /* Optionally, change text color to ensure readability */
+    border-color: #FFA500 !important;
+    /* Ensure border color matches background color */
+    background-color: #fcb32c !important;
+    font-weight: bold;
+}
+
+/* map_record */
+
+.records-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.journey-block {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #014E86;
+    justify-content: space-between;
+    min-width: 30vw;
+}
+
+.text-container {
+    width: 65%;
+    /* Adjust according to your content */
+    margin-right: 20px;
+    /* Provides spacing between text and image */
+}
+
+.image-container {
+    width: 30%;
+    /* Adjust based on your image sizes */
+    display: flex;
+    align-items: center;
+}
+
+.journey-block p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: white;
+    /* Enhances readability on the blue background */
+}
+
+.download-link {
+    margin-right: 10px;
+    /* Space between the download link and the image */
+    color: #FFD700;
+    /* Yellow color for the download icon */
+}
+
+.centered-button-container {
+    display: flex;
+    justify-content: center;
+    /* Centers content horizontally */
+    flex-wrap: wrap;
+    /* Allows buttons to wrap on smaller screens */
+    margin: 0px 0;
+    /* Adds vertical spacing around the container */
+
+}
+
+.routeTypeContainer {
+    display: flex;
+    justify-content: center;
+    /* Centers content horizontally */
+    flex-wrap: wrap;
+    /* Allows buttons to wrap on smaller screens */
+}
+
+.routeTypeContainer a {
+    flex: 1;
+    /* Distribute available space equally among all buttons */
+    border-radius: 50px;
+}
+
+.routeTypeContainer #myTracks {
+    margin-right: 10%;
+}
+
+.smallestButton {
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .5rem;
+    --bs-btn-font-size: .75rem;
+}
+
+.button {
+    background-color: #014E86;
+    /* Dark blue background */
+    color: white;
+    /* White text for contrast */
+    border: none;
+    /* No border for a modern look */
+    padding: 10px 20px;
+    /* Padding for better sizing */
+    border-radius: 15px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Cursor indicates clickable */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #01315f;
+    /* Slightly darker shade on hover for feedback */
+}
+
+.records-container a.button,
+/* Styling applies to anchor tag used as button */
+.records-container button.button {
+    margin: 20px 10px;
+    /* Margin for spacing around buttons */
+    display: inline-block;
+    /* Ensures proper spacing and alignment */
+    text-decoration: none;
+    /* Removes underline from links */
+}
+
+/*Api-map*/
+
+.custom-nav {
+    background-color: white;
+    /* Making the nav bar white */
+}
+
+.custom-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10vh;
+    text-align: center;
+    /* Centering the list items horizontally */
+}
+
+.custom-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.custom-nav ul li a:hover {
+    background-color: #01315f;
+    /* Adding blue background color to the anchor (button) */
+    color: white;
+    /* Setting text color to white */
+    padding: 10px 20px;
+    /* Adding padding to make the button clickable */
+    text-decoration: none;
+    /* Removing underline from the anchor */
+    border-radius: 15px;
+}
+
+.custom-nav ul li a {
+    background-color: #014E86;
+    /* Adding blue background color to the anchor (button) */
+    color: white;
+    /* Setting text color to white */
+    padding: 10px 20px;
+    /* Adding padding to make the button clickable */
+    text-decoration: none;
+    /* Removing underline from the anchor */
+    border-radius: 15px;
+}
+
+.custom-map-container {
+    text-align: center;
+    /* Centering the content inside the map container */
+    margin-top: 5vh;
+    /* Adding margin between map and distance */
+}
+
+.custom-map {
+    width: 65%;
+    /* Adjust the width of the map */
+    height: auto;
+    /* Let height adjust according to aspect ratio */
+    margin: auto;
+    /* Center the map horizontally */
+    margin-top: 4vh;
+}
+
+.custom-distance {
+    font-size: 2vw;
+    color: #014E86;
+    /* Changing text color to black for the distance */
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .welcome-section {
+        width: 80%;
+        /* Adjusted width for smaller screens */
+    }
+
+    .dashboard-section {
+        width: 70%;
+        /* Adjusted width for smaller screens */
+    }
+
+    .subscription-success {
+        width: 80%;
+        /* Adjusted width for smaller screens */
+    }
+
+    .confirm-plan-change {
+        width: 80%;
+        /* Adjusted width for smaller screens */
+    }
+
+    .map-page {
+        width: 80%;
+        /* Adjusted width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome-section {
+        width: 90%;
+        /* Further adjusted width for even smaller screens */
+    }
+
+    .dashboard-section {
+        width: 80%;
+        /* Further adjusted width for even smaller screens */
+    }
+
+    .subscription-success {
+        width: 90%;
+        /* Further adjusted width for even smaller screens */
+    }
+
+    .confirm-plan-change {
+        width: 90%;
+        /* Further adjusted width for even smaller screens */
+    }
+
+    .map-page {
+        width: 90%;
+        /* Further adjusted width for even smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .welcome-section {
+        width: 95%;
+        /* Adjusted width for smallest screens */
+    }
+
+    .dashboard-section {
+        width: 90%;
+        /* Adjusted width for smallest screens */
+    }
+
+    .subscription-success {
+        width: 95%;
+        /* Adjusted width for smallest screens */
+    }
+
+    .confirm-plan-change {
+        width: 95%;
+        /* Adjusted width for smallest screens */
+    }
+
+    .map-page {
+        width: 95%;
+        /* Adjusted width for smallest screens */
+    }
+}
+
+/* Friends page */
+
+#barSearch {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 100px;
+    padding: 8px 10px;
+    display: flex;
+    gap: 5px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#barSearch i {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+#barSearch input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+#tabContainer {
+    padding: 10px 10px;
+    margin: 0 auto;
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Smooth transition for transform and box-shadow */
+}
+
+#tabContainer:hover {
+    transform: translateY(-10px);
+    /* Makes the card move up slightly */
+    box-shadow: 0px 2px 5px #6BFFF7;
+    /* Creates a 'glow' effect */
+}
+
+.tab_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    position: relative;
+}
+
+.tab_box .tab_btn {
+    font-size: 18px;
+    font-weight: normal;
+    border: none;
+    background: none;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.tab_box .tab_btn.active {
+    color: royalblue;
+    font-weight: bold;
+}
+
+.line {
+    position: absolute;
+    top: 35px;
+    left: 66px;
+    width: 73px;
+    height: 5px;
+    background-color: royalblue;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.content_box {
+    padding: 20px;
+    padding-bottom: 0%;
+}
+
+.content_box .content {
+    display: none;
+    animation: moving 0.5s ease;
+}
+
+@keyframes moving {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.content_box .content.active {
+    display: block;
+    color: #000000;
+}
+
+.content_box h2 {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+#resultsList li {
+    padding: 0.5em .5em;
+    margin: 0 auto;
+    width: 510px;
+    align-items: left;
+}
+
+.resultsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center horizontally */
+    text-align: center;
+    /* Center the text inside spans */
+    padding: 1em;
+}
+
+#resultsList {
+    list-style: none;
+    padding: 0;
+}
+
+.content ol {
+    list-style: none;
+    counter-reset: item;
+}
+
+.content li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* Adjust the gap between list items */
+}
+
+.username {
+    margin-right: 1em;
+    /* Adjust the space between username and button */
+}
+
+.isUser {
+    background-color: #007bff;
+    /* Adjust button background color */
+    color: white;
+    /* Adjust button text color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.isUser:hover {
+    background-color: #0056b3;
+}
+
+.isFriend {
+    background-color: #ff0000;
+    /* Adjust button background color */
+    color: white;
+    /* Adjust button text color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.isFriend:hover {
+    background-color: #b30000;
+}
+
+.logo {
+    width: 60px;
+}
